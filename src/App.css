@@ -1,38 +1,97 @@
+body {
+  background-color: #913017;
+  height: 0;
+}
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/6846.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.road {
+  bottom: 0;
+  left: 0;
+  height: 20vh;
+  width: 100%;
+  background-color: #1f1d1d;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.roadLine {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  border-top: 10px dashed #fff;
+  z-index: 0;
+  align-self: center;
 }
 
-.App-link {
-  color: #61dafb;
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+.image2 {
+  position: absolute;
+  height: 8rem;
+  width: 10rem;
+  top: 70%;
+  left: -200px;
+
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.image3 {
+  position: absolute;
+  height: 20rem;
+  width: 16rem;
+  top: 50%;
+  left: 35px;
+  overflow: hidden;
+}
+
+.image5 {
+  position: absolute;
+  height: 14rem;
+  width: 10rem;
+  top: 60%;
+  left: 70%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #913017;
+    height: fit-content;
   }
-  to {
-    transform: rotate(360deg);
+  .road {
+    bottom: 0;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    background-color: #1f1d1d;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    display: flex;
+  }
+  .roadLine {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    border-top: 10px dashed #fff;
+    z-index: 0;
+    align-self: center;
   }
 }
